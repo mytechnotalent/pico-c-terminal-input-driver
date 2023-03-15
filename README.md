@@ -8,13 +8,13 @@
 A Raspberry Pi Pico terminal input driver written in C.
 
 # Usage
-## If the type parameter 'f' is provided it will handle float 
-## inputs at a given length.  If the type parameter 'd' is 
-## provided it will handle decimal inputs at a given length.  
-## If the type parameter 's' is given it will handle string
-## inputs at a given length.  If the type parameter 'a' is
-## given it will handle alphanumeric characters at a given
-## length.
+#### If the type parameter 'f' is provided it will handle float 
+#### inputs at a given length.  If the type parameter 'd' is 
+#### provided it will handle decimal inputs at a given length.  
+#### If the type parameter 's' is given it will handle string
+#### inputs at a given length.  If the type parameter 'a' is
+#### given it will handle alphanumeric characters at a given
+#### length.
 
 # `main.c`
 ```c
