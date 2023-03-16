@@ -59,19 +59,19 @@
  *  length.
  * 
  *  @param type              The type of data looking to capture.
- *  @param p_usb_char        The individual char to process.
- *  @param p_usb_string      The built string from proper input.
- *  @param p_USB_STRING_SIZE The max size of chars to accept from STDIN.
+ *  @param usb_char          The individual char to process.
+ *  @param usb_string        The built string from proper input.
+ *  @param USB_STRING_SIZE   The max size of chars to accept from STDIN.
  */
-void input(char type, char* p_usb_char, char* p_usb_string, const int* p_USB_STRING_SIZE);
+void input(char type, char* usb_char, char* usb_string, const int* USB_STRING_SIZE);
 
 /** @brief Function to flush the STDIN buffer.
  * 
  *  This will flush the input buffer string that was
  *  obtained from STDIN. 
  * 
- *  @param p_usb_string The string from STDIN.
+ *  @param usb_string The string from STDIN.
  */
-void flush_input(char* p_usb_string);
+void flush_input(char* usb_string);
 
 #endif /* _MY_INPUT_H */
