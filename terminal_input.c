@@ -22,6 +22,19 @@
  * SOFTWARE.
 */
 
+/** @file input.c
+ *  @brief Functions for the input driver.
+ * 
+ *  This contains the functions for the input
+ *  driver to have complete control over what will 
+ *  be accepted within the input buffer and length
+ *  as you can control input to be either strings 
+ *  with a length or decimals with a length, floats 
+ *  with a length or alphanumerics with a length.
+ * 
+ *  @author Kevin Thomas (MyTechnoTalent)
+*/
+
 #include <stdio.h>
 #include <string.h>
 #include "pico/stdlib.h"
