@@ -1,10 +1,10 @@
-![image](https://github.com/mytechnotalent/pico-c-input-driver/blob/main/Pico%20C%20Input%20Driver.png?raw=true)
+![image](https://github.com/mytechnotalent/pico-c-terminal-input-driver/blob/main/Pico%20C%20Terminal%20Input%20Driver.png?raw=true)
 
 ## FREE Reverse Engineering Self-Study Course [HERE](https://github.com/mytechnotalent/Reverse-Engineering-Tutorial)
 
 <br>
 
-# Pico C Input Driver
+# Pico C Terminal Input Driver
 A Raspberry Pi Pico terminal input driver written in C.
 
 # Usage
@@ -15,7 +15,8 @@ A Raspberry Pi Pico terminal input driver written in C.
 #include <stdio.h>
 #include <string.h>
 #include "pico/stdlib.h"
-#include "input.h"
+
+#include "terminal_input.h"
 
 int main() 
 {
@@ -28,10 +29,10 @@ int main()
     // Wait until the enter key is pressed.
     while (1)
     {
-        input('s', &usb_char, choice, &USB_STRING_SIZE);
+        terminal_input('s', &usb_char, choice, &USB_STRING_SIZE);
         if(usb_char == 0xd)
         {
-            flush_input(choice);
+            terminal_flush_input(choice);
             break;
         }
     }
@@ -42,12 +43,12 @@ int main()
         printf("choice: ");
         while (1)
         {
-            input('s', &usb_char, choice, &USB_STRING_SIZE);
+            terminal_input('s', &usb_char, choice, &USB_STRING_SIZE);
 
             if(usb_char == 0xd)
             {
                 printf("\n%s\n", choice);
-                flush_input(choice);
+                terminal_flush_input(choice);
                 break;
             }
         }
@@ -56,4 +57,4 @@ int main()
 ```
 
 ## License
-[MIT](https://raw.githubusercontent.com/mytechnotalent/pico-c-input-driver/main/LICENSE)
+[MIT](https://raw.githubusercontent.com/mytechnotalent/pico-c-terminal-input-driver/main/LICENSE)
