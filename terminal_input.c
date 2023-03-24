@@ -26,9 +26,9 @@
 #include <string.h>
 #include "pico/stdlib.h"
 
-#include "input.h"
+#include "terminal_input.h"
 
-void input(char type, char* usb_char, char* usb_string, const int* USB_STRING_SIZE)
+void terminal_input(char type, char *usb_char, char *usb_string, const int *USB_STRING_SIZE)
 {
   *usb_char = '\0';
   *usb_char = getchar_timeout_us(0);
@@ -100,7 +100,7 @@ void input(char type, char* usb_char, char* usb_string, const int* USB_STRING_SI
   }
 }
 
-void flush_input(char* usb_string)
+void terminal_flush_input(char *usb_string)
 {
   usb_string[0] = '\0';
 }

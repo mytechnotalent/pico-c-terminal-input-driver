@@ -9,7 +9,7 @@ pico_sdk_init()
 
 add_executable(main
   main.c
-  input.c
+  terminal_input.c
 )
 
 pico_enable_stdio_usb(main 1)

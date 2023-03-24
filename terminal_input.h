@@ -22,7 +22,7 @@
  * SOFTWARE.
 */
 
-/** @file input.h
+/** @file terminal_input.h
  *  @brief Function prototypes for the input driver.
  * 
  *  This contains the prototypes for the input
@@ -35,9 +35,14 @@
  *  @author Kevin Thomas (MyTechnoTalent)
 */
 
-#ifndef _MY_INPUT_H
-#define _MY_INPUT_H
+#ifndef _TERMINAL_INPUT_H
+#define _TERMINAL_INPUT_H
 
+/** @brief Defines ASCII values for commonly used terminal input characters.
+ * 
+ *  These defines can be used to compare with user input to perform specific 
+ *  actions or to restrict input.
+*/
 #define ZERO            0x30
 #define NINE            0x39
 #define PERIOD          0x2e
@@ -63,7 +68,7 @@
  *  @param usb_string        The built string from proper input.
  *  @param USB_STRING_SIZE   The max size of chars to accept from STDIN.
  */
-void input(char type, char* usb_char, char* usb_string, const int* USB_STRING_SIZE);
+void terminal_input(char type, char *usb_char, char *usb_string, const int *USB_STRING_SIZE);
 
 /** @brief Function to flush the STDIN buffer.
  * 
@@ -72,6 +77,6 @@ void input(char type, char* usb_char, char* usb_string, const int* USB_STRING_SI
  * 
  *  @param usb_string The string from STDIN.
  */
-void flush_input(char* usb_string);
+void terminal_flush_input(char *usb_string);
 
-#endif /* _MY_INPUT_H */
+#endif /* _TERMINAL_INPUT_H */
