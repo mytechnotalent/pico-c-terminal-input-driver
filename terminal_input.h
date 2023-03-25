@@ -42,7 +42,7 @@
 
 /** @brief Defines ASCII values for commonly used terminal input characters.
  * 
- *  These defines can be used to compare with user input to perform specific 
+ *  These defines are used to compare with user input to perform specific 
  *  actions or to restrict input.
 */
 #define ZERO            0x30
