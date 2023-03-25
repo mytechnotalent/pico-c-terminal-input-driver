@@ -23,6 +23,7 @@
 */
 
 /** @file terminal_input.h
+ *
  *  @brief Function prototypes for the input driver.
  * 
  *  This contains the prototypes for the input
