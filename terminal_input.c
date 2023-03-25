@@ -23,6 +23,7 @@
 */
 
 /** @file input.c
+ * 
  *  @brief Functions for the input driver.
  * 
  *  This contains the functions for the input
